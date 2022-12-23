@@ -1,4 +1,6 @@
 Example:
+
+
 To Encrypt and Decrypt a zip file by using openssl tool  and check with md5 for any tampering happens finally decrypt with it password every time 
 
 1.Choose a folder, in that folder having some files at finally zip that file and name is khaja.zip  as shown as below

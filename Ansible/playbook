@@ -1,0 +1,29 @@
+---
+- hosts: localhost
+  tasks:
+   - name: display time
+     command: uptime
+     register: shell_output
+   - debug:
+       var=shell_output
+
+   - name: display host name
+     command: hostname -f
+     register: shell_output
+   - debug:
+       var=shell_output
+
+   - name: display the disk space
+     command: df -hT
+     register: shell_output
+   - debug:
+       var=shell_output
+
+   - name: display the ping
+     command: ping -c1 www.google.com
+     register: shell_output
+   - debug:
+       var=shell_output
+
+
+
