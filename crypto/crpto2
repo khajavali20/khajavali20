@@ -1,0 +1,33 @@
+Example:
+To Encrypt and Decrypt a zip file by using openssl tool  and check with md5 for any tampering happens finally decrypt with it password every time 
+
+1.Choose a folder, in that folder having some files at finally zip that file and name is khaja.zip  as shown as below
+        
+
+2.check the file with md5 command to generate the key value before doing the zip file.
+        
+
+3.using the openssl command encrypting a khaja,zip  file as input and use output as per required manner  here i chosen as khaja_encc.zip and asking password to encryption 
+ 
+
+
+4.after encryption what we give in output as file name is shown below
+  
+
+5.trying to unzip the file while after encrypting the file. But it is actually not unzipping the file like shown below
+ 
+6.Decryption is done by below openssl command after command executed its asking password for decryption 
+ 
+
+7.what we given in as output format name file that will be shown below  
+ 
+
+8.After decrypting the file and unzipped the file 
+     
+
+9.entered the folder and displays the files under zip folder
+ 
+
+10.finally checked the md5 after decryption file
+ 
+
