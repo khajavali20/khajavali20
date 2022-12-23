@@ -1,0 +1,73 @@
+Encrypting & Decrypting 
+
+
+Encryption: 
+                        
+●	Encryption is the process of converting normal message (plaintext) into meaningless message (Ciphertext).
+●	The sender sends the data to the destination.
+
+
+Decryption: 
+                        
+●	Decryption is the process of converting meaningless message (Ciphertext) into its original form (Plaintext).
+●	The receiver receives the data and then converts the following.
+
+There are various algorithms to do this process they are : 
+●	Triple DES
+●	AES
+●	RSA
+
+Triple DES:
+●	Triple-DES algorithm was designed to replace the official and original Data Encryption Standard (DES) Algorithm. This algorithm uses three individual 56-bit keys, and their total key length adds up to 168 bits, but a more accurate key strength would be 112-bits.
+
+AES:
+●	The Advanced Encryption Standard (AES) is the algorithm that many standard organizations most trust. It also uses keys of 192 and 256 bits for high-level encryption purposes.
+
+RSA: 
+●	Rivest-Shamir-Adleman (RSA) is a public-key encryption algorithm and is the standard for sending encrypted data over the internet. It is considered an asymmetric algorithm because it uses a pair of keys – a public key to encrypt a message and a private key to decrypt it.
+●	Data is encrypted to make it safe and secure from getting stolen so that hackers can also not read the data using various vital algorithms.
+
+
+
+
+
+Why we use encryption and decryption ?
+
+●	It helps protect confidential and sensitive data like passwords or other credentials.
+●	It helps maintain the integrity of users’ data, as data won’t constantly change and can be frequently verified.
+●	Helps to ensure that an attacker or third party doesn’t alter the files or documents sent with the message.
+●	Prevents plagiarism and protects IP address.
+●	Helpful for proper network communication where an attacker can’t access encrypted data.
+●	Helps protect PII/PHI data and securely explore the internet while maintaining compliant standards.
+
+Encryption & Decryption using OPENSSL:
+
+●	OpenSSL is a software library that provides secure communication between applications over a configured network. Most HTTPS websites and internet servers make use of this software library to prevent eavesdropping and also to identify the parties they are communicating with on the other side of the network.
+●	For large storage files also openssl will  do Encryption & Decryption. 
+
+
+Encryption using openssl:
+
+For encrypting a file using the following command:
+
+●	$ openssl enc -aes-256-cbc -pbkdf2 -p -in test.txt -out test.txt.enc 
+
+●	Openssl :  Open Secure Sockets Layer.
+●	Enc :  encryption.
+●	-aes-256-cbc : specifies the use of 256 bits cryptographic key.
+●	 Aes : Advanced Encryption Standard.
+●	Cbc : cipher-block chaining.
+●	-pbkdf2 : it is the default algorithm.
+●	-p : prints used to salt, key and IV.
+●	-in : input file.
+●	-out : output file .
+
+Decryption using openssl:
+
+For Decrypting the encrypted file by  using this command: 
+
+●	$ openssl aes-256-cbc -d -pbkdf2 -in test.txt.enc -out sample_decrypted.txt
+
+Conclusion:
+
+●	Cryptography is used to secure and protect data, and encryption-decryption is two critical processes. Encryption methods help users protect their confidential information like passwords and so on. But decrypting these coded messages to be readable is also an important step.
