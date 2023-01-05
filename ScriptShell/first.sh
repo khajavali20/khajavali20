@@ -11,5 +11,3 @@ echo "My name is:"$name
 echo  My AGE is:$age
 echo "job type is :"$job
 echo TERM
-echo "MY NAME IS: "$
-echo "MY AGE IS: "$
